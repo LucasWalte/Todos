@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My To-Do List!</title>
+    <link rel="stylesheet" href="Todos.css">
+</head>
+<body>
+    <h1>Things that need getting done!</h1>
+    <h4>
+        <p>Use the form below to customise your task, then submit with the "Add Task!" button!</p>
+        <p>Use the "Remove" button to take it off the list completely.</p>
+        <p>Double click a task to cross or uncross it out!</p>
+        <p>Use the "Clear All" button to start over completely!</p>
+    </h4>
+    <form id="listForm">
+        <p>
+            <input id="task" placeholder="Add tasks here!" name="addedTask" type="text">
+          <label for="">Select task color:
+            <input type="color" name="color">
+          </label>
+          <label for="">Task importance (size on list):
+            <input type="range" name="fontSize" min="10" max="30">
+          </label>
+        </p>
+        <p>
+          <button id="addName" type="submit">Add Task!</button>
+        </p>
+    <section>
+        <ul id="listItems">
+        
+        </ul>
+    </section>
+    <button id="Reset" type="reset">Clear All</button>
+    </form>
+</body>
+<script src="Todos.js"></script>
+</html>
